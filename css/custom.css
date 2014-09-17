@@ -1,0 +1,269 @@
+﻿/*=================================================GENERAL=================================================*/
+
+body {
+   font-family: 'Raleway', sans-serif;
+}
+
+div.sidebar-container {
+    height:100%;
+    box-shadow:none;
+    background-color:white;
+    color:black;
+    border-bottom-right-radius:0 !important;
+    border-top-right-radius:0 !important;
+    border-right:1px double black;
+}
+
+h3 {
+font-weight: 300;
+font-size: 47px;
+text-transform: lowercase;
+line-height: 35px;
+margin-bottom: 12px;
+}
+
+.information {
+    position:absolute;
+    background-color:rgba(255,255,255,0.87);
+    width:370px;
+    right:40px;
+    padding:10px;
+    min-height:145px;
+}
+
+.information p {
+    position: absolute;
+bottom: 10px;
+}
+
+.information.bottom {
+    bottom:0;
+    border:1px solid black;
+    border-bottom:none;
+}
+
+
+.information.top {
+    top:0;
+    border:1px solid black;
+    border-top:none;
+}
+
+a, a:visited {
+    color:black;
+    font-weight:normal;
+    text-decoration:none;
+}
+
+a:hover, a:focus {
+    text-decoration:underline;
+}
+
+#demo_menu1 li {
+    margin-bottom:25px;
+    max-width:60px;
+    text-align:center !important;
+    font-size:15px;
+    line-height:1em;
+    font-weight:300;
+}
+
+div.sidebar-body {
+    width:auto !important;
+}
+
+.sidebar-container.left {
+    top:0 !important;
+}
+
+ul {
+    margin-left:0;
+}
+
+.pentagonshape {
+    position: relative;
+width: 14px;
+border-width: 14px 8px 0;
+border-style: solid;
+border-color: red transparent;
+margin: 0 auto;
+margin-top: 15px;
+display: inline-block;
+float: left;
+}
+.pentagonshape:before {
+    content: "";
+position: absolute;
+height: 0;
+width: 0;
+top: -28px;
+left: -9px;
+border-width: 0 16px 14px;
+border-style: solid;
+border-color: transparent transparent red;
+}
+
+.swatches {
+    margin: 0 auto;
+width: 8%;
+float: right;
+}
+
+.description {
+    float:left;
+    width:90%;
+}
+
+/*=================================================PENTAGON=================================================*/
+
+#section0 {
+    background-color:white !important;
+    padding-top:15px;
+}
+
+.pentagon {
+    position:absolute;
+    left:0;
+    right:0;
+    top:0;
+    bottom:0;
+    margin:auto;
+    -webkit-animation:spin 20s linear infinite;
+    -moz-animation:spin 20s linear infinite;
+    animation:spin 20s linear infinite;
+}
+@-moz-keyframes spin { 100% { -moz-transform: rotate(360deg); } }
+@-webkit-keyframes spin { 100% { -webkit-transform: rotate(360deg); } }
+@keyframes spin { 100% { -webkit-transform: rotate(360deg); transform:rotate(360deg); } }
+
+
+
+.pentagon.two {
+        -webkit-transform-origin: 50% 50%;
+-moz-transform-origin: 50% 50%;
+-o-transform-origin: 50% 50%;
+transform-origin: 50% 50%;
+width: 376px;
+height: 358px;
+top: -88px;
+left: 23px;
+}
+
+
+
+.pentagon.three {
+        -webkit-transform-origin: 50% 50%;
+-moz-transform-origin: 50% 50%;
+-o-transform-origin: 50% 50%;
+transform-origin: 50% 50%;
+width: 476px;
+height: 453px;
+}
+
+
+.pentagon.four {
+        -webkit-transform-origin: 50% 50%;
+-moz-transform-origin: 50% 50%;
+-o-transform-origin: 50% 50%;
+transform-origin: 50% 50%;
+width: 605px;
+height: 574px;
+}
+
+/*=================================================LEMON OF MY EYE=================================================*/
+
+#section1 {
+    background-color:white !important;
+    background-image:url("../img/eye.png");
+    background-attachment: fixed;
+    background-position: center center;
+}
+
+#section1 h3 {
+    color:#DD712B;
+}
+
+#section1 p,#section1 a  {
+    color:#7DA75A !important;
+}
+
+#section1 .information {
+    border-color:#A57CA5;
+}
+
+#section1 .pentagonshape:nth-child(1) {
+    border-color:#A57CA5 transparent;
+}
+
+#section1 .pentagonshape:nth-child(1):before {
+     border-color: transparent transparent #A57CA5 ;
+}
+
+#section1 .pentagonshape:nth-child(2) {
+    border-color:#7DA75A transparent;
+}
+
+#section1 .pentagonshape:nth-child(2):before  {
+     border-color: transparent transparent #7DA75A ;
+}
+
+#section1 .pentagonshape:nth-child(3) {
+    border-color:#CFAF36 transparent;
+}
+
+#section1 .pentagonshape:nth-child(3):before {
+     border-color: transparent transparent #CFAF36 ;
+}
+
+#section1 .pentagonshape:nth-child(4) {
+    border-color:#614130 transparent;
+}
+
+#section1 .pentagonshape:nth-child(4):before  {
+     border-color: transparent transparent #614130 ;
+}
+
+#section1 .pentagonshape:nth-child(5) {
+    border-color:#DD712B transparent;
+}
+
+#section1 .pentagonshape:nth-child(5):before {
+     border-color: transparent transparent #DD712B ;
+}
+
+/*=================================================BOWL=================================================*/
+
+#section2 {
+    background-color:white !important;
+    background-image:url("../img/bowl.png");
+    background-attachment: fixed;
+    background-position: center center;
+}
+
+#section2 p  {
+    color:#0E404E !important;
+}
+
+#section2 h3 {
+    color:#C5C851;
+}
+
+#section2 .information {
+    border-color:#C5C851;
+}
+
+#section2 .pentagonshape:nth-child(1) {
+    border-color:#0E404E transparent;
+}
+
+#section2 .pentagonshape:nth-child(1):before {
+     border-color: transparent transparent #0E404E ;
+}
+
+#section2 .pentagonshape:nth-child(2) {
+    border-color:#C5C851 transparent;
+}
+
+#section2 .pentagonshape:nth-child(2):before  {
+     border-color: transparent transparent #C5C851 ;
+}

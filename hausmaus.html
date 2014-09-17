@@ -1,0 +1,130 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>hausmaus</title>
+    <link rel="stylesheet" type="text/css" href="css/jquery.fullPage.css" />
+    <link rel="stylesheet" type="text/css" href="css/sidebar.css" />
+    <link href="css/custom.css" rel="stylesheet">
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.10.2/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="js/jquery.fullPage.min.js"></script>
+    <script type="text/javascript" src="js/jquery.sidebar.js"></script>
+    <link href='http://fonts.googleapis.com/css?family=Raleway:300,500,700' rel='stylesheet' type='text/css'>
+    <!-- Add mousewheel plugin (this is optional) -->
+    <script type="text/javascript" src="/fancybox/lib/jquery.mousewheel-3.0.6.pack.js"></script>
+
+    <!-- Add fancyBox -->
+    <link rel="stylesheet" href="/fancybox/source/jquery.fancybox.css?v=2.1.5" type="text/css" media="screen" />
+    <script type="text/javascript" src="/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+
+    <!-- Optionally add helpers - button, thumbnail and/or media -->
+    <link rel="stylesheet" href="/fancybox/source/helpers/jquery.fancybox-buttons.css?v=1.0.5" type="text/css" media="screen" />
+    <script type="text/javascript" src="/fancybox/source/helpers/jquery.fancybox-buttons.js?v=1.0.5"></script>
+    <script type="text/javascript" src="/fancybox/source/helpers/jquery.fancybox-media.js?v=1.0.6"></script>
+
+    <link rel="stylesheet" href="/fancybox/source/helpers/jquery.fancybox-thumbs.css?v=1.0.7" type="text/css" media="screen" />
+    <script type="text/javascript" src="/fancybox/source/helpers/jquery.fancybox-thumbs.js?v=1.0.7"></script>
+    
+    <!--[if IE]>
+        <script type="text/javascript">
+             var console = { log: function() {} };
+        </script>
+    <![endif]-->
+
+    <script type="text/javascript">
+		$(document).ready(function() {
+			$('#fullpage').fullpage({
+			  sectionsColor: ['#1bbc9b', '#4BBFC3', '#7BAABE', 'whitesmoke', '#ccddff'],
+			  anchors: ['firstPage', 'secondPage', '3rdPage', '4thpage', 'lastPage'],
+			  menu: '#menu',
+			  continuousVertical: true
+			});
+		});
+    </script>
+
+    <script type="text/javascript">
+    $(document).ready(function () {
+        $(".fancybox").fancybox();
+    });
+    </script>
+
+    <script>
+        $(document).ready(function () {
+            $(".fancybox-thumb").fancybox({
+                prevEffect: 'none',
+                nextEffect: 'none',
+                helpers: {
+                    title: {
+                        type: 'outside'
+                    },
+                    thumbs: {
+                        width: 50,
+                        height: 50
+                    }
+                }
+            });
+        });
+    </script>
+
+    
+
+</head>
+<body>
+
+
+    
+    
+    <div id="fullpage">
+        <ul id="demo_menu1">
+            <li><a href="#">hello world</a></li>
+            <li><a href="#">lemon courture realness</a></li>
+            <li><a href="#">porazka</a></li>
+        </ul>
+        <div class="section " id="section0">
+
+                <img style="z-index:4; top:-62px;" class="pentagon one" src="img/firsthexagon.png" />
+                <img style="z-index:3;" class="pentagon two" src="img/secondpentagon.png" />
+                <img style="z-index:2;" class="pentagon three" src="img/pentagon3.png" />
+                <img style="z-index:1;" class="pentagon four" src="img/pentagon4.png" />
+        </div>
+        <div class="section" id="section1">
+            <div class="information bottom">
+                <div class="description">
+                    <h3>You're the lemon of my eye</h3>
+                    <p><a class="fancybox-thumb" rel="fancybox-thumb" href="http://farm8.staticflickr.com/7152/6394238505_c94fdd1d89_b.jpg" title="Sicilian Scratches   erice (italianoadoravel on/off coming back)">this shirt</a>, 50's, <a class="fancybox-thumb" rel="fancybox-thumb" href="img/lemons.jpg" title="hausmaus is serving up lemon couture realness">lemons</a></p>
+                </div>
+                <div class="swatches">
+                    <div class="pentagonshape"></div>
+                    <div class="pentagonshape"></div>
+                    <div class="pentagonshape"></div>
+                    <div class="pentagonshape"></div>
+                    <div class="pentagonshape"></div>
+                </div>
+            </div>
+        </div>
+        <div class="section" id="section2">
+            <div class="information top">
+                <div class="description">
+                    <h3>Only lemon in the bowlage</h3>
+                    <p><a class="fancybox-thumb" rel="fancybox-thumb" href="http://farm8.staticflickr.com/7152/6394238505_c94fdd1d89_b.jpg" title="Sicilian Scratches   erice (italianoadoravel on/off coming back)">this shirt</a>, 50's, <a class="fancybox-thumb" rel="fancybox-thumb" href="img/lemons.jpg" title="hausmaus is serving up lemon couture realness">lemons</a></p>
+                </div>
+                <div class="swatches">
+                    <div class="pentagonshape"></div>
+                    <div class="pentagonshape"></div>
+                    
+                </div>
+            </div>
+        </div>
+        
+    </div>
+    
+    <script type="text/javascript">
+    $("ul#demo_menu1").sidebar();
+  
+    </script>
+</body>
+</html>
