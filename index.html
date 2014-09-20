@@ -81,12 +81,11 @@
 </script>
     
     <script>
+   //jQuery
 $(function() {
-  var loc = window.location.href; // returns the full URL
-  if(/#3rdPage/.test(loc)) {
-    $('.3rdPage').addClass('active');
-  }
+$('.sidenav a[class="' + location.pathname.split("/#")).addClass('active');
 });
+
     </script>
     
     
