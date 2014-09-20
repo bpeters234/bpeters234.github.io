@@ -20,6 +20,7 @@ font-size: 47px;
 text-transform: lowercase;
 line-height: 35px;
 margin-bottom: 12px;
+	margin-top:0;
 }
 
 .information {
@@ -32,8 +33,10 @@ margin-bottom: 12px;
 }
 
 .information p {
-    position: absolute;
+position: absolute;
 bottom: 10px;
+font-size: 16px;
+margin-bottom: 0;
 }
 
 .information.bottom {
@@ -93,6 +96,22 @@ float: right;
 .description {
     float:left;
     width:90%;
+}
+
+@media (max-width:577px) {
+	.information {
+		right:0;
+		height:220px;
+		width:197px;
+	}
+	
+	.swatches {
+		width: 15%;
+	}
+	
+	.description {
+		width: 80%;
+	}
 }
 
 /*=================================================SIDE NAV=================================================*/
@@ -173,6 +192,12 @@ height: 100%;
 }
 
 
+a.active {
+	font-weight:bold;
+}
+
+
+
 /*=================================================PENTAGON=================================================*/
 
 #section0 {
@@ -190,6 +215,9 @@ height: 100%;
     -webkit-animation:spin 20s linear infinite;
     -moz-animation:spin 20s linear infinite;
     animation:spin 20s linear infinite;
+	max-width:100%;
+
+
 }
 @-moz-keyframes spin { 100% { -moz-transform: rotate(360deg); } }
 @-webkit-keyframes spin { 100% { -webkit-transform: rotate(360deg); } }
@@ -227,6 +255,17 @@ height: 453px;
 transform-origin: 50% 50%;
 width: 605px;
 height: 574px;
+}
+
+@media (max-width:577px) {
+.pentagon.four,.pentagon.three {
+	display:none;
+}
+
+	.pentagon.two {
+		height:auto;
+	}
+	
 }
 
 /*=================================================LEMON OF MY EYE=================================================*/
