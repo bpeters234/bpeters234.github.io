@@ -81,12 +81,16 @@
 </script>
     
     <script>
-var url = "http://hausmausco.com/#lemon1, http://hausmausco.com/#lemon2";
+var url = "http://hausmausco.com/#lemon1";
 $(function(){
   if (location.href==url){
     $('a.lemon1').addClass("active");
   }
+  else{
+    $('a.lemon1').removeClass("active");
+  }
 });
+   
     </script>
     
     
