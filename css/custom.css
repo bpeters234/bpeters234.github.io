@@ -98,7 +98,7 @@ float: right;
     width:90%;
 }
 
-@media (max-width:577px) {
+@media (max-width:767px) {
 	.information {
 		right:0;
 		height:220px;
@@ -257,7 +257,7 @@ width: 605px;
 height: 574px;
 }
 
-@media (max-width:577px) {
+@media (max-width:767px) {
 .pentagon.four,.pentagon.three {
 	display:none;
 }
