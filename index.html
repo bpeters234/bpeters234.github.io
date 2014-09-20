@@ -81,11 +81,12 @@
 </script>
     
     <script>
-   //jQuery
-$(function() {
-$('.sidenav a[class="' + location.pathname.split("/#")).addClass('active');
+var url = "http://hausmausco.com/#secondPage";
+$(function(){
+  if (location.href==url){
+    $('a.secondPage').active();
+  }
 });
-
     </script>
     
     
