@@ -75,10 +75,21 @@
     $( ".button, .sidenav li").click(function() {
       $( ".sidenav" ).toggleClass( "wide", 400);
        $( ".sidenav ul" ).toggleClass( "widelist",400);
-
     });
+
   });
+</script>
+    
+    <script>
+$(function() {
+  var loc = window.location.href; // returns the full URL
+  if(/#3rdPage) {
+    $('.sidenav li').addClass('active');
+  }
+});
     </script>
+    
+    
 
     
 
