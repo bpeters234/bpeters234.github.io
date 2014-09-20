@@ -83,8 +83,8 @@
     <script>
 $(function() {
   var loc = window.location.href; // returns the full URL
-  if(/#3rdPage/test(loc)) {
-    $('.sidenav a.3rdpage').addClass('active');
+  if(/#3rdPage/.test(loc)) {
+    $('.3rdPage').addClass('active');
   }
 });
     </script>
