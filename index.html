@@ -72,7 +72,7 @@
     
     <script>
 			$(function() {
-    $( ".button, .sidenav li").click(function() {
+    $( "div.button, .sidenav li").click(function() {
       $( ".sidenav" ).toggleClass( "wide", 400);
        $( ".sidenav ul" ).toggleClass( "widelist",400);
     });
@@ -84,7 +84,7 @@
 $(function() {
   var loc = window.location.href; // returns the full URL
   if(/#3rdPage/test(loc)) {
-    $('.sidenav a#3rdpage').addClass('active');
+    $('.sidenav a.3rdpage').addClass('active');
   }
 });
     </script>
@@ -103,16 +103,15 @@ $(function() {
         
         <div class="sidenav">
         
-        <a href="#" class="button">
-        <div class="img-container">
+        
+        <div class="img-container button">
         <img src="img/logo.png" class="cropped"/>
         </div>
-         </a>
-         
+      
          <div class="list-container">
         <ul>
-        	<li data-menuanchor="secondPage"><a href="#secondPage">First slide</a></li>
-        	<li data-menuanchor="3rdPage"><a href="#3rdPage">Second slide</a></li>
+        	<li data-menuanchor="secondPage"><a class="secondPage" href="#secondPage">First slide</a></li>
+        	<li data-menuanchor="3rdPage"><a class="3rdPage" href="#3rdPage">Second slide</a></li>
         	
         	</ul>
         	</div>
