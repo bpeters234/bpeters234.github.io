@@ -60,7 +60,8 @@ a, a:visited {
 }
 
 a:hover, a:focus {
-    text-decoration:underline;
+    text-decoration:none;
+	font-weight:500;
 }
 
 
@@ -193,11 +194,13 @@ height: 100%;
 
 .sidenav li.active {
 	font-weight:500;
+		pointer-events: none;
+   cursor: default;
 }
 
 
-a.active {
-	font-weight:500;
+.button {
+	cursor:pointer;
 }
 
 
