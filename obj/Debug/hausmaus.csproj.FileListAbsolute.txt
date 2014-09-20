@@ -1,6 +1,0 @@
-C:\Users\Ben\Dropbox\Projects\Personal\hausmaus\Website\hausmaus\hausmaus\bin\hausmaus.dll.config
-C:\Users\Ben\Dropbox\Projects\Personal\hausmaus\Website\hausmaus\hausmaus\bin\hausmaus.dll
-C:\Users\Ben\Dropbox\Projects\Personal\hausmaus\Website\hausmaus\hausmaus\bin\hausmaus.pdb
-C:\Users\Ben\Dropbox\Projects\Personal\hausmaus\Website\hausmaus\hausmaus\obj\Debug\hausmaus.csprojResolveAssemblyReference.cache
-C:\Users\Ben\Dropbox\Projects\Personal\hausmaus\Website\hausmaus\hausmaus\obj\Debug\hausmaus.dll
-C:\Users\Ben\Dropbox\Projects\Personal\hausmaus\Website\hausmaus\hausmaus\obj\Debug\hausmaus.pdb

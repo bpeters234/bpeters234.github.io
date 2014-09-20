@@ -7,12 +7,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>hausmaus</title>
     <link rel="stylesheet" type="text/css" href="css/jquery.fullPage.css" />
-    <link rel="stylesheet" type="text/css" href="css/sidebar.css" />
+   
     <link href="css/custom.css" rel="stylesheet">
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
     <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.10.2/jquery-ui.min.js"></script>
     <script type="text/javascript" src="js/jquery.fullPage.min.js"></script>
-    <script type="text/javascript" src="js/jquery.sidebar.js"></script>
+    
     <link href='http://fonts.googleapis.com/css?family=Raleway:300,500,700' rel='stylesheet' type='text/css'>
     <!-- Add mousewheel plugin (this is optional) -->
     <script type="text/javascript" src="/fancybox/lib/jquery.mousewheel-3.0.6.pack.js"></script>
@@ -69,6 +69,16 @@
             });
         });
     </script>
+    
+    <script>
+			$(function() {
+    $( ".button, .sidenav li").click(function() {
+      $( ".sidenav" ).toggleClass( "wide", 400);
+       $( ".sidenav ul" ).toggleClass( "widelist",400);
+
+    });
+  });
+    </script>
 
     
 
@@ -79,11 +89,31 @@
     
     
     <div id="fullpage">
-        <ul id="demo_menu1">
-            <li><a href="#">helloaaald</a></li>
-            <li><a href="#">lemon courture realness</a></li>
-            <li><a href="#">porazka</a></li>
-        </ul>
+        
+        <div class="sidenav">
+        
+        <a href="#" class="button">
+        <div class="img-container">
+        <img src="img/logo.png" class="cropped"/>
+        </div>
+         </a>
+         
+         <div class="list-container">
+        <ul>
+        	<li data-menuanchor="secondPage"><a href="#secondPage">First slide</a></li>
+        	<li data-menuanchor="3rdPage"><a href="#3rdPage">Second slide</a></li>
+        	
+        	</ul>
+        	</div>
+       
+        </div>
+       
+        
+        
+        
+        
+        
+        
         <div class="section " id="section0">
 
                 <img style="z-index:4; top:-62px;" class="pentagon one" src="img/firsthexagon.png" />
@@ -121,10 +151,6 @@
         </div>
         
     </div>
-    
-    <script type="text/javascript">
-    $("ul#demo_menu1").sidebar();
-  
-    </script>
+
 </body>
 </html>
