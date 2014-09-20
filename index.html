@@ -39,7 +39,7 @@
 		$(document).ready(function() {
 			$('#fullpage').fullpage({
 			  sectionsColor: ['#1bbc9b', '#4BBFC3', '#7BAABE', 'whitesmoke', '#ccddff'],
-			  anchors: ['firstPage', 'secondPage', '3rdPage', '4thpage', 'lastPage'],
+			  anchors: ['home', 'lemon1', 'lemon2', 'notlemon', 'lastPage'],
 			  menu: '#menu',
 			  continuousVertical: true
 			});
@@ -81,10 +81,17 @@
 </script>
     
     <script>
-var url = "http://hausmausco.com/#secondPage";
+var url = "http://hausmausco.com/#lemon1, http://hausmausco.com/#lemon2";
 $(function(){
   if (location.href==url){
-    $('a.secondPage').addClass("active");
+    $('a.lemon1, a.lemon2').addClass("active");
+  }
+});
+    
+    var url = "http://hausmausco.com/#notlemon";
+$(function(){
+  if (location.href==url){
+    $('notlemon').addClass("active");
   }
 });
     </script>
@@ -110,9 +117,9 @@ $(function(){
       
          <div class="list-container">
         <ul>
-        	<li data-menuanchor="secondPage"><a class="secondPage" href="#secondPage">First slide</a></li>
-        	<li data-menuanchor="3rdPage"><a class="3rdPage" href="#3rdPage">Second slide</a></li>
-        	
+        	<li data-menuanchor="lemon1"><a class="lemon1" href="#lemon1">First slide</a></li>
+        	<li data-menuanchor="lemon2"><a class="lemon2" href="#lemon2">Second slide</a></li>
+        	<li data-menuanchor="notlemon"><a class="notlemon" href="#notlemon">Porazka</a></li>
         	</ul>
         	</div>
        
@@ -147,6 +154,19 @@ $(function(){
             </div>
         </div>
         <div class="section" id="section2">
+            <div class="information top">
+                <div class="description">
+                    <h3>Only lemon in the bowlage</h3>
+                    <p><a class="fancybox-thumb" rel="fancybox-thumb" href="http://farm8.staticflickr.com/7152/6394238505_c94fdd1d89_b.jpg" title="Sicilian Scratches   erice (italianoadoravel on/off coming back)">this shirt</a>, 50's, <a class="fancybox-thumb" rel="fancybox-thumb" href="img/lemons.jpg" title="hausmaus is serving up lemon couture realness">lemons</a></p>
+                </div>
+                <div class="swatches">
+                    <div class="pentagonshape"></div>
+                    <div class="pentagonshape"></div>
+                    
+                </div>
+            </div>
+        </div>
+         <div class="section" id="section3">
             <div class="information top">
                 <div class="description">
                     <h3>Only lemon in the bowlage</h3>
