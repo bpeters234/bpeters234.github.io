@@ -81,12 +81,21 @@
 </script>
     
     <script>
-var url = "http://hausmausco.com/#lemon1, http://hausmausco.com/#lemon2";
+var url = "http://hausmausco.com/#lemon1";
 $(function(){
   if (location.href==url){
     $('a.lemon1, a.lemon2').addClass("active");
   }
 });
+    
+    var url = "http://hausmausco.com/#lemon2";
+$(function(){
+  if (location.href==url){
+    $('a.lemon1').addClass("active");
+  }
+});
+    
+    
     
     var url = "http://hausmausco.com/#notlemon";
 $(function(){
@@ -118,7 +127,6 @@ $(function(){
          <div class="list-container">
         <ul>
         	<li data-menuanchor="lemon1"><a class="lemon1" href="#lemon1">First slide</a></li>
-        	<li data-menuanchor="lemon2"><a class="lemon2" href="#lemon2">Second slide</a></li>
         	<li data-menuanchor="notlemon"><a class="notlemon" href="#notlemon">Porazka</a></li>
         	</ul>
         	</div>
