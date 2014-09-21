@@ -26,10 +26,9 @@ margin-bottom: 12px;
 .information {
     position:absolute;
     background-color:rgba(255,255,255,0.87);
-    width:370px;
-    right:40px;
     padding:10px;
-    min-height:145px;
+			right: 40px;
+width: 197px;
 }
 
 .information p {
@@ -90,30 +89,21 @@ border-color: transparent transparent red;
 
 .swatches {
     margin: 0 auto;
-width: 8%;
+width: 14%;
 float: right;
 }
-
-.description {
-    float:left;
-    width:90%;
-}
+	.description {
+		width: 80%;
+		margin-right:10px;
+		float:left;
+	}
 
 @media (max-width:767px) {
 	.information {
 		right:0;
-		height:220px;
-		width:197px;
-	}
-	
-	.swatches {
-		width: 15%;
-	}
-	
-	.description {
-		width: 80%;
 	}
 }
+
 
 /*=================================================SIDE NAV=================================================*/
 
@@ -277,98 +267,139 @@ height: 574px;
 
 /*=================================================LEMON OF MY EYE=================================================*/
 
-#section1 {
+.eye {
     background-color:white !important;
     background-image:url("../img/eye.png");
     background-attachment: fixed;
     background-position: center center;
+	background-size:cover;
 }
 
-#section1 h3 {
+.eye h3 {
     color:#DD712B;
 }
 
-#section1 p,#section1 a  {
+.eye p,.eye a  {
     color:#7DA75A !important;
 }
 
-#section1 .information {
+.eye .information {
     border-color:#A57CA5;
 }
 
-#section1 .pentagonshape:nth-child(1) {
+.eye .pentagonshape:nth-child(1) {
     border-color:#A57CA5 transparent;
 }
 
-#section1 .pentagonshape:nth-child(1):before {
+.eye .pentagonshape:nth-child(1):before {
      border-color: transparent transparent #A57CA5 ;
 }
 
-#section1 .pentagonshape:nth-child(2) {
+.eye .pentagonshape:nth-child(2) {
     border-color:#7DA75A transparent;
 }
 
-#section1 .pentagonshape:nth-child(2):before  {
+.eye .pentagonshape:nth-child(2):before  {
      border-color: transparent transparent #7DA75A ;
 }
 
-#section1 .pentagonshape:nth-child(3) {
+.eye .pentagonshape:nth-child(3) {
     border-color:#CFAF36 transparent;
 }
 
-#section1 .pentagonshape:nth-child(3):before {
+.eye .pentagonshape:nth-child(3):before {
      border-color: transparent transparent #CFAF36 ;
 }
 
-#section1 .pentagonshape:nth-child(4) {
+.eye .pentagonshape:nth-child(4) {
     border-color:#614130 transparent;
 }
 
-#section1 .pentagonshape:nth-child(4):before  {
+.eye .pentagonshape:nth-child(4):before  {
      border-color: transparent transparent #614130 ;
 }
 
-#section1 .pentagonshape:nth-child(5) {
+.eye .pentagonshape:nth-child(5) {
     border-color:#DD712B transparent;
 }
 
-#section1 .pentagonshape:nth-child(5):before {
+.eye .pentagonshape:nth-child(5):before {
      border-color: transparent transparent #DD712B ;
 }
 
 /*=================================================BOWL=================================================*/
 
-#section2 {
+.bowls {
     background-color:white !important;
     background-image:url("../img/bowl.png");
     background-attachment: fixed;
     background-position: center center;
+	background-size:cover;
 }
 
-#section2 p  {
+.bowls p  {
     color:#0E404E !important;
 }
 
-#section2 h3 {
+.bowls h3 {
     color:#C5C851;
 }
 
-#section2 .information {
+.bowls .information {
     border-color:#C5C851;
 }
 
-#section2 .pentagonshape:nth-child(1) {
+.bowls .pentagonshape:nth-child(1) {
     border-color:#0E404E transparent;
 }
 
-#section2 .pentagonshape:nth-child(1):before {
+.bowls .pentagonshape:nth-child(1):before {
      border-color: transparent transparent #0E404E ;
 }
 
-#section2 .pentagonshape:nth-child(2) {
+.bowls .pentagonshape:nth-child(2) {
     border-color:#C5C851 transparent;
 }
 
-#section2 .pentagonshape:nth-child(2):before  {
+.bowls .pentagonshape:nth-child(2):before  {
      border-color: transparent transparent #C5C851 ;
 }
+
+/*=================================================Trees=================================================*/
+
+.trees {
+    background-color:white !important;
+    background-image:url("../img/lemontree2.png");
+    background-attachment: fixed;
+    background-position: center center;
+	background-size:cover;
+}
+
+.trees  p  {
+    color:#765046 !important;
+}
+
+.trees  h3 {
+    color:#765046;
+}
+
+.trees  .information {
+    border-color:#BDCCD4;
+}
+
+.trees .pentagonshape:nth-child(1) {
+    border-color:#BDCCD4 transparent;
+}
+
+.trees  .pentagonshape:nth-child(1):before {
+     border-color: transparent transparent #BDCCD4 ;
+}
+
+.trees  .pentagonshape:nth-child(2) {
+    border-color:#765046 transparent;
+}
+
+.trees  .pentagonshape:nth-child(2):before  {
+     border-color: transparent transparent #765046 ;
+}
+
