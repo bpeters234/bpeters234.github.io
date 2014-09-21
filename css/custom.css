@@ -28,7 +28,7 @@ margin-bottom: 12px;
     background-color:rgba(255,255,255,0.87);
     padding:10px;
 			right: 40px;
-width: 197px;
+width: 215px;
 }
 
 .information p {
@@ -213,8 +213,6 @@ height: 100%;
     -moz-animation:spin 20s linear infinite;
     animation:spin 20s linear infinite;
 	max-width:100%;
-
-
 }
 @-moz-keyframes spin { 100% { -moz-transform: rotate(360deg); } }
 @-webkit-keyframes spin { 100% { -webkit-transform: rotate(360deg); } }
@@ -370,6 +368,94 @@ height: 574px;
 .trees {
     background-color:white !important;
     background-image:url("../img/lemontree2.png");
+    background-attachment: fixed;
+    background-position: center center;
+	background-size:cover;
+}
+
+.trees  p  {
+    color:#765046 !important;
+}
+
+.trees  h3 {
+    color:#765046;
+}
+
+.trees  .information {
+    border-color:#BDCCD4;
+}
+
+.trees .pentagonshape:nth-child(1) {
+    border-color:#BDCCD4 transparent;
+}
+
+.trees  .pentagonshape:nth-child(1):before {
+     border-color: transparent transparent #BDCCD4 ;
+}
+
+.trees  .pentagonshape:nth-child(2) {
+    border-color:#765046 transparent;
+}
+
+.trees  .pentagonshape:nth-child(2):before  {
+     border-color: transparent transparent #765046 ;
+}
+
+/*=================================================Porazka================================================*/
+
+.porazka img {
+    position:absolute;
+    left:0;
+    right:0;
+    top:0;
+    bottom:0;
+    margin:auto;
+	max-width:100%;
+}
+
+/*=================================================Trees=================================================*/
+
+.porazka2 {
+    background-color:white !important;
+    background-image:url("../img/porazkabckg1.png");
+    background-attachment: fixed;
+    background-position: center center;
+	background-size:cover;
+}
+
+.trees  p  {
+    color:#765046 !important;
+}
+
+.trees  h3 {
+    color:#765046;
+}
+
+.trees  .information {
+    border-color:#BDCCD4;
+}
+
+.trees .pentagonshape:nth-child(1) {
+    border-color:#BDCCD4 transparent;
+}
+
+.trees  .pentagonshape:nth-child(1):before {
+     border-color: transparent transparent #BDCCD4 ;
+}
+
+.trees  .pentagonshape:nth-child(2) {
+    border-color:#765046 transparent;
+}
+
+.trees  .pentagonshape:nth-child(2):before  {
+     border-color: transparent transparent #765046 ;
+}
+
+/*=================================================Trees=================================================*/
+
+.porazka3 {
+    background-color:white !important;
+    background-image:url("../img/porazkannckg2.png");
     background-attachment: fixed;
     background-position: center center;
 	background-size:cover;
