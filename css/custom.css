@@ -14,10 +14,6 @@ div.sidebar-container {
     border-right:1px double black;
 }
 
-.slides-container img {
-	top:0 !important;
-}
-
 h3 {
 font-weight: 300;
 font-size: 47px;
@@ -28,11 +24,12 @@ margin-bottom: 12px;
 }
 
 .information {
-    position:absolute;
-    background-color:rgba(255,255,255,0.87);
-    padding:10px;
-			right: 40px;
+position: absolute;
+background-color: rgba(255,255,255,0.87);
+padding: 10px;
+right: 0;
 width: 215px;
+height: 220px;
 }
 
 .information p {
@@ -54,6 +51,7 @@ margin-bottom: 0;
     border:1px solid black;
     border-top:none;
 }
+
 
 a, a:visited {
     color:black;
@@ -152,7 +150,7 @@ img.cropped {
     top: 0;
     left: 0;
     right: 0;
-    bottom: 0;  
+    bottom: 0;
 }
 .sidenav li {
 margin-bottom: 28px;
@@ -259,6 +257,13 @@ height: 574px;
 
 /*=================================================LEMON OF MY EYE=================================================*/
 
+.eye {
+    background-color:white !important;
+    background-image:url("../img/eye.png");
+    background-attachment: fixed;
+    background-position: center center;
+	background-size:cover;
+}
 
 .eye h3 {
     color:#DD712B;

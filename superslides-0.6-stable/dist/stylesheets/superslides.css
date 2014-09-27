@@ -38,11 +38,12 @@
 }
 
 .slides-pagination {
-  position: absolute;
-  z-index: 3;
-  bottom: 0;
-  text-align: center;
-  width: 100%;
+ position: absolute;
+z-index: 3;
+top: 207px;
+text-align: center;
+width: 237px;
+right: 0;
 }
 .slides-pagination a {
   border: 2px solid #222;
