@@ -16,20 +16,47 @@ div.sidebar-container {
 
 h3 {
 font-weight: 300;
-font-size: 47px;
+font-size: 42px;
 text-transform: lowercase;
 line-height: 35px;
 margin-bottom: 12px;
 	margin-top:0;
 }
 
-.information {
+.pagnav{
+width: 215px;
+/* float: right; */
 position: absolute;
+right: 0;
+/* top: 240px; */
+bottom: 0;
+right: 65px;
+}
+
+.details {
+	float: right;
+z-index: 2;
+position: absolute;
+right: 0;
+width: 180px;
+}
+
+.information {
+/* position: absolute; */
 background-color: rgba(255,255,255,0.87);
 padding: 10px;
 right: 0;
 width: 215px;
-height: 220px;
+height: 240px;
+position: absolute;
+/* float: right; */
+/* display: block; */
+/* position: relative; */
+z-index: 1;
+	bottom: 0;
+border: 1px solid black;
+border-bottom: none;
+margin-right: 65px;
 }
 
 .information p {
@@ -37,19 +64,6 @@ position: absolute;
 bottom: 10px;
 font-size: 16px;
 margin-bottom: 0;
-}
-
-.information.bottom {
-    bottom:0;
-    border:1px solid black;
-    border-bottom:none;
-}
-
-
-.information.top {
-    top:0;
-    border:1px solid black;
-    border-top:none;
 }
 
 
@@ -68,7 +82,7 @@ a:hover, a:focus {
 
 .pentagonshape {
     position: relative;
-width: 14px;
+width: 30px;
 border-width: 14px 8px 0;
 border-style: solid;
 border-color: red transparent;
@@ -102,6 +116,10 @@ float: right;
 
 @media (max-width:767px) {
 	.information {
+		margin-right:0;
+	}
+	
+	.pagnav {
 		right:0;
 	}
 }
@@ -137,21 +155,15 @@ body,
 .carousel-inner .item {
   height: 100%;
 }
-.item:nth-child(1) {
-     background-color:white !important;
-    background-image:url("../img/eye.png");
 
-    background-position: center center;
-	background-size:cover;
-}
-.item:nth-child(2) {
+#carousel1 .item:nth-child(2) {
    background-color:white !important;
     background-image:url("../img/lemontree2.png");
 
     background-position: center center;
 	background-size:cover;
 }
-.item:nth-child(3) {
+#carousel1 .item:nth-child(3) {
   background: orange;
 }
 
@@ -159,6 +171,43 @@ body,
 	float:none;
 }
 
+.carousel-control.right, .carousel-control.left {
+background-image: none;
+opacity: 1;
+color: black;
+text-shadow: none;
+font-size: 62px;
+font-weight: 300;
+/* height: 20px; */
+position: relative;
+bottom: 34px;
+height: 40px;
+top: auto;
+}
+
+.carousel-control.right {
+	float: right;
+margin-top: 100px;
+margin-left: 5px;
+}
+
+.carousel-control.left{
+	float: left;
+margin-top: 100px;
+margin-left: 5px;
+}
+
+.carousel-indicators {
+	bottom:5px !important;
+}
+
+.carousel-indicators li {
+	border-color:black;
+}
+
+.carousel-indicators .active {
+	background-color:white;
+}
 
 /*=================================================SIDE NAV=================================================*/
 
@@ -166,7 +215,7 @@ body,
 	left: 0;
 bottom: 0;
 background-color: rgba(255,255,255,0.87);
-width: 100px;
+width: 80px;
 border-right: 1px solid black;
 z-index: 1000;
 height: 100%;
@@ -183,27 +232,30 @@ position: relative;
 margin-left: auto;
 margin-right: auto;
 overflow: hidden;
+	margin-top: 15px;
  }
 
 div.list-container {
-width: 85px;
+width: 80px;
 /* height: 115px; */
 position: relative;
 margin-left: auto;
 margin-right: auto;
 height: 100%;
 /* overflow: visible; */
-margin-top: 28px;
+margin-top: 20px;
  }
 
 
 img.cropped {
-    position: absolute;
-    margin: auto;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
+  position: absolute;
+margin: auto;
+top: 0;
+left: 0;
+right: 0;
+bottom: 0;
+height: 244px;
+
 }
 .sidenav li {
 margin-bottom: 28px;
@@ -299,6 +351,19 @@ width: 605px;
 height: 574px;
 }
 
+.title {
+	width: 100px;
+/* margin: 0 auto; */
+/* z-index: 1000; */
+position: absolute;
+left: 47%;
+z-index: 5;
+font-size: 14px;
+/* font-weight: 500; */
+top: 39%;
+}
+
+
 @media (max-width:767px) {
 .pentagon.four,.pentagon.three {
 	display:none;
@@ -310,23 +375,65 @@ height: 574px;
 	
 }
 
-/*=================================================LEMON OF MY EYE=================================================*/
+/*=================================================LEMON OF MY EYE ONE=================================================*/
 
-.eye {
+.eye2{
     background-color:white !important;
-    background-image:url("../img/eye.png");
-    background-attachment: fixed;
+    background-image:url("../img/eye2.png");
     background-position: center center;
 	background-size:cover;
 }
+
+.eye2 h3 {
+    color:#9DB8B1;
+}
+
+
+.eye2 .information {
+    border-color:#EBD0C5;
+}
+
+.eye2 .pentagonshape:nth-child(1) {
+    border-color:#9DB8B1 transparent;
+}
+
+.eye2 .pentagonshape:nth-child(1):before {
+     border-color: transparent transparent #9DB8B1 ;
+}
+
+.eye2 .pentagonshape:nth-child(2) {
+    border-color:#E8E9EA transparent;
+}
+
+.eye2 .pentagonshape:nth-child(2):before {
+     border-color: transparent transparent #E8E9EA ;
+}
+
+.eye2 .pentagonshape:nth-child(3) {
+    border-color:#EBD0C5 transparent;
+}
+
+.eye2 .pentagonshape:nth-child(3):before  {
+     border-color: transparent transparent #EBD0C5 ;
+}
+
+
+/*=================================================LEMON OF MY EYE TWO=================================================*/
+
+.eye{
+    background-color:white !important;
+    background-image:url("../img/eye.png");
+    background-position: center center;
+	background-size:cover;
+}
+
+
 
 .eye h3 {
     color:#DD712B;
 }
 
-.eye p,.eye a  {
-    color:#7DA75A !important;
-}
+
 
 .eye .information {
     border-color:#A57CA5;
@@ -374,10 +481,9 @@ height: 574px;
 
 /*=================================================BOWL=================================================*/
 
-.bowls {
+.bowls{
     background-color:white !important;
-    background-image:url("../img/bowl.png");
-    background-attachment: fixed;
+    background-image:url("../img/bowl2.png");
     background-position: center center;
 	background-size:cover;
 }
@@ -415,7 +521,6 @@ height: 574px;
 .trees {
     background-color:white !important;
     background-image:url("../img/lemontree2.png");
-    background-attachment: fixed;
     background-position: center center;
 	background-size:cover;
 }
@@ -460,42 +565,94 @@ height: 574px;
 	max-width:100%;
 }
 
+
+.porazka h3 {
+    color:#E77EB2;
+}
+
+.porazka  .information {
+    border-color:#404041;
+}
+
+.porazka .pentagonshape:nth-child(1) {
+    border-color:#404041 transparent;
+}
+
+.porazka  .pentagonshape:nth-child(1):before {
+     border-color: transparent transparent #404041 ;
+}
+
+.porazka  .pentagonshape:nth-child(2) {
+    border-color:#E77EB2 transparent;
+}
+
+.porazka  .pentagonshape:nth-child(2):before  {
+     border-color: transparent transparent #E77EB2 ;
+}
+
+.porazka  .pentagonshape:nth-child(3) {
+    border-color:#E98BB9 transparent;
+}
+
+.porazka  .pentagonshape:nth-child(3):before  {
+     border-color: transparent transparent #E98BB9 ;
+}
+
+.porazka  .pentagonshape:nth-child(4) {
+    border-color:#F0B5D2 transparent;
+}
+
+.porazka  .pentagonshape:nth-child(4):before  {
+     border-color: transparent transparent #F0B5D2 ;
+}
+
 /*=================================================Trees=================================================*/
 
 .porazka2 {
     background-color:white !important;
     background-image:url("../img/porazkabckg1.png");
-    background-attachment: fixed;
     background-position: center center;
 	background-size:cover;
 }
 
-.trees  p  {
-    color:#765046 !important;
+.porazka2 h3 {
+    color:#F1B4D2;
 }
 
-.trees  h3 {
-    color:#765046;
+.porazka2  .information {
+    border-color:#CACACA;
 }
 
-.trees  .information {
-    border-color:#BDCCD4;
+.porazka2 .pentagonshape:nth-child(1) {
+    border-color:#F1B4D2 transparent;
 }
 
-.trees .pentagonshape:nth-child(1) {
-    border-color:#BDCCD4 transparent;
+.porazka2  .pentagonshape:nth-child(1):before {
+     border-color: transparent transparent #F1B4D2 ;
 }
 
-.trees  .pentagonshape:nth-child(1):before {
-     border-color: transparent transparent #BDCCD4 ;
+.porazka2  .pentagonshape:nth-child(2) {
+    border-color:#CACACA transparent;
 }
 
-.trees  .pentagonshape:nth-child(2) {
-    border-color:#765046 transparent;
+.porazka2  .pentagonshape:nth-child(2):before  {
+     border-color: transparent transparent #CACACA ;
 }
 
-.trees  .pentagonshape:nth-child(2):before  {
-     border-color: transparent transparent #765046 ;
+.porazka2  .pentagonshape:nth-child(3) {
+    border-color:#EBEBEB transparent;
+}
+
+.porazka2  .pentagonshape:nth-child(3):before  {
+     border-color: transparent transparent #EBEBEB ;
+}
+
+.porazka2  .pentagonshape:nth-child(4) {
+    border-color:#F6F6F6 transparent;
+}
+
+.porazka2  .pentagonshape:nth-child(4):before  {
+     border-color: transparent transparent #F6F6F6 ;
 }
 
 /*=================================================Trees=================================================*/
@@ -503,36 +660,46 @@ height: 574px;
 .porazka3 {
     background-color:white !important;
     background-image:url("../img/porazkannckg2.png");
-    background-attachment: fixed;
     background-position: center center;
 	background-size:cover;
 }
 
-.trees  p  {
-    color:#765046 !important;
+.porazka3 h3 {
+    color:#9CA8C9;
 }
 
-.trees  h3 {
-    color:#765046;
+.porazka3  .information {
+    border-color:#CACACA;
 }
 
-.trees  .information {
-    border-color:#BDCCD4;
+.porazka3 .pentagonshape:nth-child(1) {
+    border-color:#9CA8C9 transparent;
 }
 
-.trees .pentagonshape:nth-child(1) {
-    border-color:#BDCCD4 transparent;
+.porazka3  .pentagonshape:nth-child(1):before {
+     border-color: transparent transparent #9CA8C9 ;
 }
 
-.trees  .pentagonshape:nth-child(1):before {
-     border-color: transparent transparent #BDCCD4 ;
+.porazka3  .pentagonshape:nth-child(2) {
+    border-color:#CACACA transparent;
 }
 
-.trees  .pentagonshape:nth-child(2) {
-    border-color:#765046 transparent;
+.porazka3  .pentagonshape:nth-child(2):before  {
+     border-color: transparent transparent #CACACA ;
 }
 
-.trees  .pentagonshape:nth-child(2):before  {
-     border-color: transparent transparent #765046 ;
+.porazka3  .pentagonshape:nth-child(3) {
+    border-color:#EBEBEB transparent;
 }
 
+.porazka3  .pentagonshape:nth-child(3):before  {
+     border-color: transparent transparent #EBEBEB ;
+}
+
+.porazka3  .pentagonshape:nth-child(4) {
+    border-color:#F6F6F6 transparent;
+}
+
+.porazka3  .pentagonshape:nth-child(4):before  {
+     border-color: transparent transparent #F6F6F6 ;
+}3
