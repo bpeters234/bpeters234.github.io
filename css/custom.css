@@ -616,7 +616,7 @@ top: 39%;
     background-color:white !important;
     background-image:url("../img/bark.png");
     background-position: center center;
-	background-size:cover;
+	background-size: 41%;
 }
 
 .bark1 h3 {
