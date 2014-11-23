@@ -17,7 +17,6 @@ div.sidebar-container {
 h3 {
 font-weight: 300;
 font-size: 42px;
-text-transform: lowercase;
 line-height: 35px;
 margin-bottom: 12px;
 	margin-top:0;
@@ -364,16 +363,7 @@ top: 39%;
 }
 
 
-@media (max-width:767px) {
-.pentagon.four,.pentagon.three {
-	display:none;
-}
 
-	.pentagon.two {
-		height:auto;
-	}
-	
-}
 
 /*=================================================LEMON OF MY EYE ONE=================================================*/
 
@@ -553,6 +543,179 @@ top: 39%;
      border-color: transparent transparent #765046 ;
 }
 
+
+/*================================================haus=================================================*/
+.haus1{
+    background-color:white !important;
+    background-image:url("../img/haus.png");
+    background-position: center center;
+	background-size:cover;
+}
+
+.haus1 h3 {
+    color:#DC8E8E;
+}
+
+
+.haus1 .information {
+    border-color:#DC8E8E;
+}
+
+.haus1 .pentagonshape:nth-child(1) {
+    border-color:#9DCD9D transparent;
+}
+
+.haus1 .pentagonshape:nth-child(1):before {
+     border-color: transparent transparent #9DCD9D ;
+}
+
+.haus1 .pentagonshape:nth-child(2) {
+    border-color:#DC8E8E transparent;
+}
+
+.haus1 .pentagonshape:nth-child(2):before {
+     border-color: transparent transparent #DC8E8E ;
+}
+
+.haus1 .pentagonshape:nth-child(3) {
+    border-color:#8196A5 transparent;
+}
+
+.haus1 .pentagonshape:nth-child(3):before  {
+     border-color: transparent transparent #8196A5 ;
+}
+
+.haus1 .pentagonshape:nth-child(4) {
+    border-color:#444444 transparent;
+}
+
+.haus1 .pentagonshape:nth-child(4):before  {
+     border-color: transparent transparent #444444 ;
+}
+
+
+.haus2 {
+    background-color:white !important;
+    background-image:url("../img/haus-artwork.png");
+    background-position: center center;
+	background-size:90%;
+}
+
+.haus2 .pentagonshape:nth-child(1) {
+    border-color:#000 transparent;
+}
+
+.haus2 .pentagonshape:nth-child(1):before {
+     border-color: transparent transparent #000 ;
+}
+
+
+/*=================================================bark================================================*/
+
+.bark1 {
+    background-color:white !important;
+    background-image:url("../img/bark.png");
+    background-position: center center;
+	background-size:cover;
+}
+
+.bark1 h3 {
+    color:#003A19;
+}
+
+
+.bark1 .information {
+    border-color:#003A19 ;
+}
+
+.bark1 .pentagonshape:nth-child(1) {
+    border-color:#E2E2E2 transparent;
+}
+
+.bark1 .pentagonshape:nth-child(1):before {
+     border-color: transparent transparent #E2E2E2 ;
+}
+
+.bark1 .pentagonshape:nth-child(2) {
+    border-color:#003A19 transparent;
+}
+
+.bark1 .pentagonshape:nth-child(2):before {
+     border-color: transparent transparent #003A19 ;
+}
+
+.bark2 {
+    background-color:white !important;
+    background-image:url("../img/bark-artwork.png");
+    background-position: center center;
+	background-size:100%;
+	background-repeat: no-repeat;
+}
+
+.bark2 .pentagonshape:nth-child(1) {
+    border-color:#000 transparent;
+}
+
+.bark2 .pentagonshape:nth-child(1):before {
+     border-color: transparent transparent #000 ;
+}
+
+
+
+/*=================================================pentagons================================================*/
+
+
+.pentagon-page {
+    background-color:white !important;
+    background-image:url("../img/pentagons.png");
+    background-position: center center;
+	background-size:71%;
+}
+
+.pentagon-page h3 {
+    color:#0F2123;
+	font-size:30px;
+}
+
+
+.pentagon-page .information {
+    border-color:#0F2123;
+}
+
+.pentagon-page .pentagonshape:nth-child(1) {
+    border-color:#F8B2BA transparent;
+}
+
+.pentagon-page .pentagonshape:nth-child(1):before {
+     border-color: transparent transparent #F8B2BA ;
+}
+
+.pentagon-page .pentagonshape:nth-child(2) {
+    border-color:#0F2123 transparent;
+}
+
+.pentagon-page .pentagonshape:nth-child(2):before {
+     border-color: transparent transparent #0F2123 ;
+}
+
+.pentagon-page .pentagonshape:nth-child(3) {
+    border-color:#FDFD00 transparent;
+}
+
+.pentagon-page .pentagonshape:nth-child(3):before {
+     border-color: transparent transparent #FDFD00 ;
+}
+
+.pentagon-page .pentagonshape:nth-child(4) {
+    border-color:#06A3FA transparent;
+}
+
+.pentagon-page .pentagonshape:nth-child(4):before {
+     border-color: transparent transparent #06A3FA ;
+}
+
+
+
 /*=================================================Porazka================================================*/
 
 .porazka img {
@@ -702,4 +865,29 @@ top: 39%;
 
 .porazka3  .pentagonshape:nth-child(4):before  {
      border-color: transparent transparent #F6F6F6 ;
-}3
+}
+
+
+@media (max-width:767px) {
+.pentagon.four,.pentagon.three {
+	display:none;
+}
+
+	.pentagon.two {
+		height:auto;
+	}
+	
+	.information {
+		height: 202px;
+	}
+	
+	h3 {
+		
+		font-size:30px;
+	}
+	
+	.pentagon-page {
+		background-size:100%;
+	}
+	
+}

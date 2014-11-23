@@ -15,45 +15,6 @@
     <link href="css/custom.css" rel="stylesheet">
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
     <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.10.2/jquery-ui.min.js"></script>
-    <script type="text/javascript" src="js/jquery.fullPage.min.js"></script>
-    <script src="js/bootstrap.min.js" type="text/javascript"></script>
-    <script src="js/touch.js" type="text/javascript"></script>
-    <script>
-        $(document).ready(function() {
-            $("#lemon").swiperight(function() {
-                $(this).carousel('prev');
-            });
-            $("#lemon").swipeleft(function() {
-                $(this).carousel('next');
-            });
-        });
-    </script>
-
-    <script type="text/javascript">
-        $(document).ready(function() {
-            $('#fullpage').fullpage({
-                css3: true,
-                anchors: ['home', 'lemons', 'porazka'],
-                menu: '#menu',
-                continuousVertical: true
-            });
-        });
-    </script>
-
-    <script type="text/javascript">
-        jQuery(document).bind('keyup', function(e) {
-
-            if (e.keyCode == 39) {
-                jQuery('a.carousel-control.right').trigger('click');
-            } else if (e.keyCode == 37) {
-                jQuery('a.carousel-control.left').trigger('click');
-            }
-
-        });
-    </script>
-
-
-
 
 
 
@@ -70,7 +31,12 @@
         <div class="list-container">
             <ul id="menu">
                 <li data-menuanchor="lemons"><a href="#lemons">Lemon couture realness</a>
-                   
+                </li>
+                <li data-menuanchor="haus"><a href="#haus">haus</a>
+                </li>
+                <li data-menuanchor="bark"><a href="#bark">Silver<br>tree</a>
+                </li>
+                <li data-menuanchor="petnagon"><a href="#pentagon">Fields of pentagon</a>
                 </li>
                 <li data-menuanchor="porazka"><a href="#porazka">porazka</a>
                 </li>
@@ -80,26 +46,19 @@
 
 
     <div id="fullpage">
-
-
-
-
+<!--			=========LANDING PAGE================-->
         <div class="section" id="section0">
-        <div class="title"><p style="font-size:20px;">hausmaus company</p><p>textile design</p></div>
-
+        <div class="title"><p style="font-size:20px;">hausmaus company</p><p>textile design</p><p>@hausmausco</p></div>
             <img style="z-index:4; top:-62px;" class="pentagon one" src="img/firsthexagon.png" />
             <img style="z-index:3;" class="pentagon two" src="img/secondpentagon.png" />
             <img style="z-index:2;" class="pentagon three" src="img/pentagon3.png" />
             <img style="z-index:1;" class="pentagon four" src="img/pentagon4.png" />
-
-
-
         </div>
 
 
 
 
-
+<!--			=========LEMONS================-->
 
         <div class="section" id="section1">
 
@@ -180,15 +139,121 @@
                     <a class="carousel-control right" href="#project1" data-slide="next"><span style="font-size: 15px;margin-top:21px;" class="glyphicon glyphicon-chevron-right"></span></a>
                 </div>
             </div>
-
         </div>
         
-          <div class="section" id="section2">
+        <!--			=========haus================-->
+        
+         <div class="section" id="section2">
 
 
             <div class="carousel slide carousel-fade" id="project2" data-interval="false">
 
 
+                <div class="carousel-inner">
+                    <div class="active haus1 item">
+                        <div class="information">
+                            <div class="description">
+                                <h3>I heart haus</h3>
+
+                            </div>
+                            <div class="swatches">
+                                <div class="pentagonshape"></div>
+                                <div class="pentagonshape"></div>
+                                <div class="pentagonshape"></div>
+                                <div class="pentagonshape"></div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="haus2 item">
+                        <div class="information">
+                            <div class="description">
+                                <h3>Original artwork</h3>
+                            </div>
+                            <div class="swatches">
+                                <div class="pentagonshape"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="pagnav">
+                    <ol class="carousel-indicators">
+                        <li data-target="#project2" data-slide-to="0" class="active"></li>
+                        <li data-target="#project2" data-slide-to="1"></li>
+                    </ol>
+                    <a class="carousel-control left" href="#project2" data-slide="prev"><span style="font-size: 15px;margin-top:21px;" class="glyphicon glyphicon-chevron-left"></span></a>
+                    <a class="carousel-control right" href="#project2" data-slide="next"><span style="font-size: 15px;margin-top:21px;" class="glyphicon glyphicon-chevron-right"></span></a>
+                </div>
+            </div>
+        </div>
+        
+         <!--			=========bark================-->
+        
+         
+         <div class="section" id="section3">
+            <div class="carousel slide carousel-fade" id="project3" data-interval="false">
+                <div class="carousel-inner">
+                    <div class="active bark1 item">
+                        <div class="information">
+                            <div class="description">
+                                <h3>Silver tree</h3>
+                            </div>
+                            <div class="swatches">
+                                <div class="pentagonshape"></div>
+                                <div class="pentagonshape"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bark2 item">
+                        <div class="information">
+                            <div class="description">
+                                <h3>Original artwork</h3>
+                            </div>
+                            <div class="swatches">
+                                <div class="pentagonshape"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="pagnav">
+                    <ol class="carousel-indicators">
+                        <li data-target="#project3" data-slide-to="0" class="active"></li>
+                        <li data-target="#project3" data-slide-to="1"></li>
+                    </ol>
+                    <a class="carousel-control left" href="#project3" data-slide="prev"><span style="font-size: 15px;margin-top:21px;" class="glyphicon glyphicon-chevron-left"></span></a>
+                    <a class="carousel-control right" href="#project3" data-slide="next"><span style="font-size: 15px;margin-top:21px;" class="glyphicon glyphicon-chevron-right"></span></a>
+                </div>
+            </div>
+        </div>
+        
+        <!--			=========pentagons================-->
+        
+         <div class="section" id="section4">
+            <div class="carousel slide carousel-fade" id="project4" data-interval="false">
+                <div class="carousel-inner">
+                    <div class="active pentagon-page item">
+                        <div class="information">
+                            <div class="description">
+                                <h3>Through fields of pentagons</h3>
+                            </div>
+                            <div class="swatches">
+                                <div class="pentagonshape"></div>
+                                <div class="pentagonshape"></div>
+                                <div class="pentagonshape"></div>
+                                <div class="pentagonshape"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!--			=========Pierogi================-->
+        
+          <div class="section" id="section5">
+            <div class="carousel slide carousel-fade" id="project5" data-interval="false">
                 <div class="carousel-inner">
                     <div class="active porazka item">
                         <img src="img/Porazka.png">
@@ -235,20 +300,17 @@
                         </div>
                     </div>
                     
-
-
-
                 </div>
 
                 <div class="pagnav">
                     <ol class="carousel-indicators">
-                        <li data-target="#project2" data-slide-to="0" class="active"></li>
-                        <li data-target="#project2" data-slide-to="1"></li>
-                        <li data-target="#project2" data-slide-to="2"></li>
+                        <li data-target="#project5" data-slide-to="0" class="active"></li>
+                        <li data-target="#project5" data-slide-to="1"></li>
+                        <li data-target="#project5" data-slide-to="2"></li>
                        
                     </ol>
-                    <a class="carousel-control left" href="#project2" data-slide="prev"><span style="font-size: 15px;margin-top:21px;" class="glyphicon glyphicon-chevron-left"></span></a>
-                    <a class="carousel-control right" href="#project2" data-slide="next"><span style="font-size: 15px;margin-top:21px;" class="glyphicon glyphicon-chevron-right"></span></a>
+                    <a class="carousel-control left" href="#project5" data-slide="prev"><span style="font-size: 15px;margin-top:21px;" class="glyphicon glyphicon-chevron-left"></span></a>
+                    <a class="carousel-control right" href="#project5" data-slide="next"><span style="font-size: 15px;margin-top:21px;" class="glyphicon glyphicon-chevron-right"></span></a>
                 </div>
             </div>
 
@@ -257,6 +319,62 @@
 
 
     </div>
+    
+        <script type="text/javascript" src="js/jquery.fullPage.min.js"></script>
+    <script src="js/bootstrap.min.js" type="text/javascript"></script>
+    <script src="js/touch.js" type="text/javascript"></script>
+    <script>
+        $(document).ready(function() {
+            $("#project1").swiperight(function() {
+                $(this).carousel('prev');
+            });
+            $("#project1").swipeleft(function() {
+                $(this).carousel('next');
+            });
+            $("#project2").swiperight(function() {
+                $(this).carousel('prev');
+            });
+            $("#project2").swipeleft(function() {
+                $(this).carousel('next');
+            });
+            $("#project3").swiperight(function() {
+                $(this).carousel('prev');
+            });
+            $("#project3").swipeleft(function() {
+                $(this).carousel('next');
+            });
+            $("#project4").swiperight(function() {
+                $(this).carousel('prev');
+            });
+            $("#project4").swipeleft(function() {
+                $(this).carousel('next');
+            });
+           $("#project5").swiperight(function() {
+                $(this).carousel('prev');
+            });
+            $("#project5").swipeleft(function() {
+                $(this).carousel('next');
+            });
+
+            $('#fullpage').fullpage({
+                css3: true,
+                anchors: ['home', 'lemons', 'haus', 'bark', 'pentagon', 'porazka'],
+                menu: '#menu',
+                continuousVertical: true
+            });
+            
+        });
+        
+        jQuery(document).bind('keyup', function(e) {
+
+            if (e.keyCode == 39) {
+                jQuery('a.carousel-control.right').trigger('click');
+            } else if (e.keyCode == 37) {
+                jQuery('a.carousel-control.left').trigger('click');
+            }
+
+        });
+    </script>
 
 </body>
 
