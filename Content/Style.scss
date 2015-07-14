@@ -237,6 +237,13 @@ background-size: 60% !important;
     }
 }
 
+.p7 {
+    top: $block-height*24;
+    @media (max-width: 767px) {
+        top: $block-height-mob*24;
+    }
+}
+
 .info-btn {
     position: absolute;
     font-size: 30px;
@@ -414,5 +421,18 @@ background-size: 60% !important;
     }
     .colour1 {
         background-color: #fff200;
+    }
+}
+
+.design7 {
+	background-color:#0ecbc3;
+    .product1 {
+        background: url('../Img/FishPillow/Product1.png') center no-repeat;
+        background-size: contain;
+    }
+    .product2 {
+        background: url('../Img/FishPillow/Product2.png') center no-repeat;
+		background-color:#140e0e;
+        background-size: 90%;
     }
 }
